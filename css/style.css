@@ -1,0 +1,220 @@
+:root {
+    --main-color: #10cab7;
+    --secondary-color: #2c4755;
+    --section-padding: 60px;
+    --section-background: #f6f6f6;
+    --main-duration: 0.5s;
+  }
+  /* End Variables */
+  /* Start Global Rules */
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Work Sans", sans-serif;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  ul{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  /* End Global Rules */
+  /* Start header */
+  header{
+    padding: 20px;
+  }
+  header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  
+  header .container .image {
+    width:60px;
+  }
+  nav{
+    position: relative;
+  }
+  header .container nav .line{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end
+  }
+  header .container nav .line span{
+    background-color: #333;
+    height: 2px;
+    margin-bottom: 5px;
+
+  }
+  nav .line span.one-line{
+    width: 100%;
+  }
+  nav .line span.middel-line{
+    width: 60%;
+    transition: 1s all;
+  }
+  nav .line:hover .middel-line{
+    width: 100%;
+  }
+  nav .line span.last-line{
+    width: 100%;
+  }
+  
+  nav ul{
+    min-width:200px;
+    position: absolute;
+    z-index: 3333;
+    top: calc(100% + 15px);
+    right: 0;
+    background-color: #f6f6f6;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transition: all var(--main-duration);
+  }
+  nav ul::before{
+    content: '';
+    position: absolute;
+    top: -21px;
+    right: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6  transparent ;
+  }
+  nav ul li a{
+    display: block;
+    padding: 15px;
+    color: #333;
+    transition: all var(--main-duration);
+  }
+  nav ul li:not(:last-child) a{
+    border-bottom: 1px solid #ddd;
+  }
+  nav .line:hover + ul {
+    opacity: 1;
+  }
+    /* End Global header */
+
+     /* Start landing*/
+    .landing{
+        background-image: url(../img/landing.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height:calc( 100vh - 64px);
+        position: relative;
+    }
+
+    .landing .text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        width:320px;
+        text-align: center;
+    }
+    .landing .text h1{
+        font-weight: bold;
+         font-size: 50px;
+        color: var(--main-color);
+        margin: 0px;
+        
+    }
+
+    .landing .text  p{
+        font-size: 19px;
+        line-height: 1.8;
+    }
+
+
+
+
+
+
+
+
+    /* End Global landing */
+     /* Start features  */
+     .features {
+        padding-top: var(--section-padding);
+        padding-bottom: var(--section-padding);
+        background-color: var(--section-background);
+    }
+    .features .container{
+        display: flex;
+        text-align: center;
+    }
+    .features .container .feat {
+    flex-basis: 33.333;
+    padding: 20px;
+    
+}
+.features .container .feat .text i{
+    color:  var(--main-color);
+}
+.features .feat .text h3 {
+    font-weight: 800;
+    margin: 30px 0px;
+}
+.features .feat .text p {
+    line-height: 1.8;
+    color: rgb(119, 119, 119);
+    font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+    /* End Global features  */
+     /* Start header */
+    /* End Global header */
+     /* Start header */
+    /* End Global header */
+     /* Start header */
+    /* End Global header */
+     /* Start header */
+    /* End Global header */
+     /* Start header */
+    /* End Global header */
+     /* Start header */
+    /* End Global header */
+     /* Start header */
+    /* End Global header */
